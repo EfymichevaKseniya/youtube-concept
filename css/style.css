@@ -1,10 +1,12 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    
 }
 .header {
     padding-top: 20px;
@@ -14,6 +16,12 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 99;
 }
 
 .menu-btn {
@@ -30,12 +38,12 @@ body {
 }
 
 .menu-line {
-   display: block; 
-   width: 20px;
-   height: 3px;
+    display: block; 
+    width: 20px;
+    height: 3px;
 
-   background-color: #1F2022;
-   border-radius: 20px; 
+    background-color: #1F2022;
+    border-radius: 20px; 
 }
 
 .logo {
@@ -111,6 +119,25 @@ body {
 /* Sidebar */
 .sidebar {
     padding-left: 32px;
+    width: 15%;
+    height: calc(100% - 114px);
+
+    position: fixed;
+    left: 0;
+    top: 114px;
+    
+    scrollbar-width: none;
+    overflow-y: auto;
+
+    background-color: #fff;
+}
+
+.content {
+    width: 100%;
+    margin-top: 85px;
+    padding-left: 15%;
+    padding-top: 30px;
+
 }
 
 .nav-menu {
@@ -161,4 +188,212 @@ body {
     font-size: 18px;
     line-height: 23px;
     margin-bottom: 30px;
+}
+
+
+/* Content - channel */
+.channel {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.channel-title {
+    margin-bottom: 30px;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    color: #19202C;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+
+}
+
+.channel-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.channel-text {
+    margin-left: 20px;
+}
+
+/* Slides */
+
+.video-card {
+    width: 250px;
+}
+
+.video-thumb {
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+.video-duration {
+    padding: 3px 9px;
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    background: rgba(0, 0, 0, .3);
+    border-radius: 12px;
+
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+}
+
+.thumbnail {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.video-title {
+    margin: 10px 0 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #19202C;
+}
+
+.video-info {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 13px;
+    line-height: 16px;
+    color: #C2C2C2;
+
+}
+
+
+.video-views {
+    margin-right: 5px;
+}
+
+.video-views:after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    vertical-align: middle;
+
+    display: inline-block;
+    background-color: #C2C2C2;
+}
+
+.slider-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+
+    position: absolute;
+    right: 10%;
+    top: 10%;
+}
+
+.channel-button {
+    cursor: pointer;
+}
+
+/* Recommended */
+.channel-recommended {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.channel-recommended-button {
+    cursor: pointer;
+}
+
+
+.slider-buttons-rec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+
+    position: absolute;
+    right: 10%;
+    top: 4%;
+}
+
+.video-card-rec {
+    width: 540px;
+}
+
+.video-thumb-rec {
+    width: 540px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 14px;
+    position: relative;
+}
+
+
+
+.thumbnail-rec {
+    width: 540px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Channel-food */
+.channel-text-add {
+    margin-left: 19px;
+    padding-top: 6px;
+
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #C2C2C2;
+
+    
+}
+
+.channel-subsribes {
+    width: 154px;
+    height: 40px;
+    padding: 10px 20px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: 250px;
+
+    border: none;
+    border-radius: 20px;
+    background-color: #FF0000;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.channel-food {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+
+.slider-buttons-food {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 66px;
+
+    position: absolute;
+    right: 10%;
+    top: 4%;
+}
+
+.channel-food-button {
+    cursor: pointer;
 }
