@@ -31,6 +31,13 @@
                 </svg>
             </button>
         </div>
+
+        <button class="mobile-search">
+            <svg class="icon icon-search" width="19" height="19">
+                <use xlink:href="img/icons.svg#search"></use>
+            </svg>
+        </button>
+
         <div class="icons">
             <a class="icons-link" href="#" >
                 <svg class="icon icon-camera" width="27" height="20">
@@ -52,8 +59,44 @@
         <a class="user" href="#">
             <img class="user-avatar" src="img/owl.jpg" alt="avatar">
         </a>
-      
     </header>
+
+    <div class="mobile-sidebar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg class="icon icon-home" width="20" height="19">
+                        <use xlink:href="img/icons.svg#home"></use>
+                    </svg>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg class="icon icon-trending" width="20" height="19">
+                        <use xlink:href="img/icons.svg#trending"></use>
+                    </svg>
+                    <span class="nav-text">Trending</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg class="icon icon-subscription" width="20" height="19">
+                        <use xlink:href="img/icons.svg#subscription"></use>
+                    </svg>
+                    <span class="nav-text">Subscription</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <svg class="icon icon-library" width="20" height="19">
+                        <use xlink:href="img/icons.svg#library"></use>
+                    </svg>
+                    <span class="nav-text">Library</span>
+                </a>
+            </li>
+        </ul>
+    </div> <!--/.mobile-sidebar-->
 
     <div class="container">
         <aside class="sidebar">
@@ -351,13 +394,13 @@
                     <span class="channel-text">Recommended</span>
                 </a>
 
-                <div class="slider-buttons-rec">
-                    <div class="channel-recommended-button  channel-rec-button-prev">
+                <div class="slider-buttons slider-buttons--rec">
+                    <div class="channel-button  channel-rec-button-prev">
                         <svg class="icon icon-left" width="28" height="28">
                             <use xlink:href="img/icons.svg#left"></use>
                         </svg>
                     </div>
-                    <div class="channel-recommended-button  channel-rec-button-next">
+                    <div class="channel-button  channel-rec-button-next">
                         <svg class="icon icon-right" width="28" height="28">
                             <use xlink:href="img/icons.svg#right"></use>
                         </svg>
@@ -400,7 +443,7 @@
                                         <span class="video-views">54k views </span>
                                         <span class="video-date">11  months ago</span>
                                     </span>
-                                    <span class="video-channell">Edward Osborne             </span>
+                                    <span class="video-channell">Edward Osborne</span>
                                 </div>
                             </div>
                             <!-- /.video-card -->
@@ -432,18 +475,19 @@
                     <img class="channel-avatar" src="img/subscribes/food.png" alt="avatar">
                     <span class="channel-text">Food & Drink</span>
                     <span class="channel-text-add">Recommended channel for you</span>
-                    <button class="channel-subsribes" type="button">Subscribe 2.3m</button>
+                    <button class="channel-subsribes__btn" type="button">Subscribe 2.3m</button>
                 </a>
 
 
                 <div class="slider-buttons">
+                    
 
-                    <div class="channel-food-button  channel-food-button-prev">
+                    <div class="channel-button  channel-food-button-prev">
                         <svg class="icon icon-left" width="28" height="28">
                             <use xlink:href="img/icons.svg#left"></use>
                         </svg>
                     </div>
-                    <div class="channel-food-button  channel-food-button-next">
+                    <div class="channel-button  channel-food-button-next">
                         <svg class="icon icon-right" width="28" height="28">
                             <use xlink:href="img/icons.svg#right"></use>
                         </svg>

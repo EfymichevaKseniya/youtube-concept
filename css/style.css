@@ -121,6 +121,7 @@ body {
     padding-left: 32px;
     width: 15%;
     height: calc(100% - 114px);
+    width: 200px;
 
     position: fixed;
     left: 0;
@@ -135,8 +136,9 @@ body {
 .content {
     width: 100%;
     margin-top: 85px;
-    padding-left: 15%;
+    padding-left: 250px;
     padding-top: 30px;
+    padding-right: 70px;
 
 }
 
@@ -192,12 +194,17 @@ body {
 
 
 /* Content - channel */
+.content {
+    margin-left: 20px;
+}
 .channel {
     position: relative;
     margin-bottom: 50px;
 }
 
 .channel-title {
+    width: 100%;
+    max-width: 540px;
     margin-bottom: 30px;
     display: flex;
     align-items:center;
@@ -221,12 +228,10 @@ body {
 
 /* Slides */
 
-.video-card {
-    width: 250px;
-}
+
 
 .video-thumb {
-    width: 250px;
+    width: 100%;
     height: 150px;
     overflow: hidden;
     border-radius: 14px;
@@ -249,7 +254,7 @@ body {
 }
 
 .thumbnail {
-    width: 250px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
 }
@@ -299,18 +304,20 @@ body {
     top: 10%;
 }
 
+.slider-buttons--rec {
+    top: 4%;
+}
+
+
 .channel-button {
     cursor: pointer;
+    outline: none;
 }
 
 /* Recommended */
 .channel-recommended {
     position: relative;
     margin-bottom: 50px;
-}
-
-.channel-recommended-button {
-    cursor: pointer;
 }
 
 
@@ -325,12 +332,9 @@ body {
     top: 4%;
 }
 
-.video-card-rec {
-    width: 540px;
-}
 
 .video-thumb-rec {
-    width: 540px;
+    width: 100%;
     height: 250px;
     overflow: hidden;
     border-radius: 14px;
@@ -340,7 +344,7 @@ body {
 
 
 .thumbnail-rec {
-    width: 540px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
 }
@@ -358,42 +362,190 @@ body {
     
 }
 
-.channel-subsribes {
+
+
+
+.channel-food {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.channel-food .channel-title {
+    width: 80%;
+    max-width: 1400px;
+}
+
+.channel-subsribes__btn {
     width: 154px;
     height: 40px;
     padding: 10px 20px;
     margin-top: 25px;
     margin-left: auto;
-    margin-right: 250px;
 
     border: none;
     border-radius: 20px;
     background-color: #FF0000;
+    cursor: pointer;
 
     font-size: 16px;
     line-height: 20px;
     text-align: center;
     color: #fff;
+
 }
-
-.channel-food {
-    position: relative;
-    margin-bottom: 50px;
-}
-
-
 
 .slider-buttons-food {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 66px;
+    margin-left: auto;
 
-    position: absolute;
-    right: 10%;
-    top: 4%;
+    
 }
 
-.channel-food-button {
-    cursor: pointer;
+.mobile-sidebar {
+    display: none;
+}
+
+.mobile-search {
+    display: none;
+}
+
+@media (max-width: 1100px) {
+    .channel-food .channel-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .channel-food .channel-avatar {
+        margin-left: 20px;
+    }
+
+    .channel-subsribes__btn {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 860px) {
+    .icons {
+        display: none;
+    }
+    .user {
+        margin-left: 20px;
+    }
+    
+}
+
+@media (max-width: 640px) {
+
+    .swiper-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .swiper-slide {
+        margin-bottom: 40px;
+    }
+
+    .video-thumb {
+        height: 300px;
+    }
+    .thumbnail {
+        height: 300px;
+    }
+    .slider-buttons {
+        display: none;
+    }
+    .menu-btn {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .content {
+        padding-left: 32px;
+    }
+
+    .mobile-sidebar {
+        width: 100%;
+        display: block;
+
+        position: fixed;
+        z-index: 99;
+        bottom: 0;
+        left: 0;
+        
+        background-color: #fff;
+    }
+
+    .mobile-sidebar .nav-menu {
+        margin-bottom: 0;
+        
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-top: 1px solid #f1f1f1;
+    }
+
+    .mobile-sidebar .nav-link {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 11px;
+        
+    }
+
+    .nav-item {
+        margin-bottom: 0;
+        
+    }
+
+    .nav-text {
+        margin-left: 0;
+        margin-top: 5px;
+
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    .input-group {
+        width: 70%;
+        top: -100px;
+        margin-left: 20px;
+
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+
+        transition: top 0.2s;
+    }
+
+    .mobile-search {
+        display: block;
+        margin-left: auto;
+
+        border: none;
+        outline: none;
+
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    .channel-subsribes__btn {
+        display: none;
+    }
+
+
+}
+
+
+.is-open {
+    opacity: 1;
+    top: 20px;
 }
