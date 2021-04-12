@@ -2,10 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Mulish', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    overflow-x: hidden;
     
 }
 .header {
@@ -133,14 +138,7 @@ body {
     background-color: #fff;
 }
 
-.content {
-    width: 100%;
-    margin-top: 85px;
-    padding-left: 250px;
-    padding-top: 30px;
-    padding-right: 70px;
 
-}
 
 .nav-menu {
     margin-top: 0;
@@ -194,12 +192,21 @@ body {
 
 
 /* Content - channel */
+
 .content {
+    width: 100%;
+    max-width: 1920px;
     margin-left: 20px;
+    margin-top: 85px;
+    padding-left: 25%;
+    padding-top: 30px;
+    padding-right: 70px;
+
 }
 .channel {
     position: relative;
-    margin-bottom: 50px;
+    margin: 0 auto 50px;
+
 }
 
 .channel-title {
@@ -429,6 +436,7 @@ body {
 }
 
 @media (max-width: 860px) {
+    
     .icons {
         display: none;
     }
@@ -439,7 +447,7 @@ body {
 }
 
 @media (max-width: 640px) {
-
+    
     .swiper-wrapper {
         display: flex;
         flex-direction: column;
@@ -544,6 +552,16 @@ body {
 
 }
 
+
+@media (max-width: 320px) {
+    .content {
+        width: 100%;
+        max-width: 280px;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+}
 
 .is-open {
     opacity: 1;
